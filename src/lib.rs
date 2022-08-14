@@ -3,10 +3,15 @@ extern crate getset;
 
 #[derive(Default, Debug, Getters, PartialEq, Eq)]
 pub struct HtttpResponse {
+    #[getset(get = "pub")]
     status: String,
+    #[getset(get = "pub")]
     message: String,
+    #[getset(get = "pub")]
     version: String,
+    #[getset(get = "pub")]
     field: Vec<String>,
+    #[getset(get = "pub")]
     body: String,
 }
 
